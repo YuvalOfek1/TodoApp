@@ -50,8 +50,8 @@
   margin-left: 10px;
   float: right;
   cursor: pointer;
-
 }
+
 
 .todo-List{
   margin-top: 20vh;
@@ -82,10 +82,26 @@
   align-items: center;
 }
 
+.item:hover{
+  background-color: hsla(234, 19%, 33%, 0.737);
+  transition: all 0.5s ease-out;
+}
+
 .checked{
   border-color: lightgreen;
+  transition: all 0.2s ease-out;
 }
 
 .checked .remove-btn{
   color: lightgreen;
+}
+
+.add-btn{
+  background-color: #282c34;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.add-btn:hover{
+  color:white
 }

@@ -7,7 +7,7 @@ const Input = (props) => {
         <div className="form">
             <form>
                 <input name="todo" placeholder='add Todo...' />
-                <button onClick={props.func} type="submit">Add Todo</button>
+                <button className="add-btn" onClick={props.func} type="submit">+</button>
             </form>
       </div>
     )
