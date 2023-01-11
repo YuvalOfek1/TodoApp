@@ -29,9 +29,9 @@ function TodoList() {
 
   return (
     <div className='todo-List'>
-      <h1>Todo List</h1>
+      <h1>TODO</h1>
         <Input func = {handleAddTodo}></Input>
-        <div className='items-wrapper'>
+        <div className={todos.length>0? 'items-wrapper-active' :'items-wrapper' } >
           {todos.map((todo, index) => (
             <div className={todos[index].completed? 'item checked':'item'} key={index}>
               <input
