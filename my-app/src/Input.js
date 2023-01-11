@@ -1,10 +1,9 @@
 import React from "react";
-import TodoList from "./TodoList";
 
 const Input = (props) => {
 
     return(
-        <div className="form">
+        <div className="form-div">
             <form>
                 <input name="todo" placeholder='add Todo...' />
                 <button className="add-btn" onClick={props.func} type="submit">+</button>
@@ -14,4 +13,4 @@ const Input = (props) => {
 
 }
 
-export default Input
+export default Input;

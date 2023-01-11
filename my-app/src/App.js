@@ -1,7 +1,8 @@
-import React,{useState} from "react";
+import React from "react";
 import './App.css'
-import Input from "./Input";
 import TodoList from "./TodoList";
+import BackGround from "./BackGround";
+
 
 
 
@@ -10,7 +11,12 @@ import TodoList from "./TodoList";
 const App = () => {
   //const [newTodo, setNewTodo] = useState("")
   //const [TDL, setTDL] = useState([])
-  return <div><TodoList/></div>
+  return (
+    <div>
+      <TodoList/>
+      <BackGround/>
+    </div>
+    )
   //return <Counter/>
 }
 

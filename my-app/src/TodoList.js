@@ -29,6 +29,7 @@ function TodoList() {
 
   return (
     <div className='todo-List'>
+      <h1>Todo List</h1>
         <Input func = {handleAddTodo}></Input>
         <div className='items-wrapper'>
           {todos.map((todo, index) => (
