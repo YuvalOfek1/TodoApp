@@ -1,0 +1,160 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: hsl(233, 11%, 84%);;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+
+  
+}
+
+.add-button{
+  color:red;
+  background-color: #282c34;
+}
+
+.remove-btn{
+  color:red;
+  background-color: #282c34;
+  margin-left: 10px;
+  float: right;
+  cursor: pointer;
+}
+
+
+.todo-List{
+  position: relative;
+  margin-top: 2vh;
+  padding: 20px;
+  width:30vw;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+                                       
+.items-wrapper{
+  box-shadow: 0 0 10px 0 hsl(235, 19%, 35%);
+  
+  
+}
+
+.items-wrapper-active{
+  background-color: #26324df1;
+  border-radius: 20px;                                        
+  display: flex;
+  flex-flow: column;
+  width: 20vw;
+  padding: 0.7rem 1.5rem;
+  align-items: center;
+  justify-content: center;
+}
+.form-div{
+  margin-bottom: 10px;
+  width:25vw;
+}
+.form-div input{
+  width:73%;
+  position: relative;
+  padding: 10px;
+  margin: 2px;
+  margin-left: 7.5%;
+  height: 10px;
+  background-color: #30353ff3;
+  border-style: none;
+  border-radius: 10px;
+  align-items: center;
+}
+.item{
+  padding: 10px;
+  margin: 2px;
+  background-color: hsl(235, 24%, 19%);
+  border-color: hsl(236, 17%, 50%);
+  border-width: 3px;
+  border-style: solid;
+  width: 20vw;
+  align-items: center;
+
+}
+
+.item:hover{
+  background-color:hsl(233, 14%, 35%);
+}
+
+.checked{
+  border-color: lightgreen;
+  transition: all 0.25s ease-out;
+}
+
+.checked .remove-btn{
+  color: lightgreen;
+}
+
+.add-btn{
+  background-color: #282c34;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.add-btn:hover{
+  color:white
+}
+.topPic{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.BG{
+  width: 100vw;
+  height: 100vh;
+  top:0;
+  background-color: #282c34;
+  position: absolute;
+  right:0;
+  z-index: -1;
+}
+.topBG{
+  width:100vw;
+  height:30vh;
+  background-image: url(../../images/bg-desktop-dark.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+
+}
