@@ -73,13 +73,15 @@
 
 .items-wrapper-active{
   background-color: #26324df1;
-  border-radius: 20px;                                        
+  border-radius: 20px;  
+  padding: 1rem 0;                                      
   display: flex;
   flex-flow: column;
-  width: 20vw;
-  padding: 0.7rem 1.5rem;
+  width: 25vw;
+  padding: 2rm, 3rm;
   align-items: center;
   justify-content: center;
+
 }
 .form-div{
   margin-bottom: 10px;

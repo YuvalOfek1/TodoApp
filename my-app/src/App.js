@@ -13,8 +13,8 @@ const App = () => {
   //const [TDL, setTDL] = useState([])
   return (
     <div>
-      <TodoList/>
       <BackGround/>
+      <TodoList/>
     </div>
     )
   //return <Counter/>

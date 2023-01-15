@@ -1,6 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, createContext } from 'react';
 import Input from './Input';
 import './App.css'
+import TodoItem from './TodoItem';
+import List from './common/List';
+
+
+export const TodoListContext = createContext({})
 
 function TodoList() {
   const [todos, setTodos] = useState([]);
@@ -32,19 +37,10 @@ function TodoList() {
       <h1>TODO</h1>
         <Input func = {handleAddTodo}></Input>
         <div className={todos.length>0? 'items-wrapper-active' :'items-wrapper' } >
-          {todos.map((todo, index) => (
-            <div className={todos[index].completed? 'item checked':'item'} key={index}>
-              <input
-                type="checkbox"
-                checked={todo.completed}
-                onChange={() => handleToggleTodo(index)}/>
-                <span style={{textDecoration: todo.completed? `line-through` : `none`}}>
-                  {todo.text}
-                  </span> 
-              <button className='remove-btn' onClick={() => handleRemoveTodo(index)}>Remove</button>
-            </div>
-            
-          ))}
+          <TodoListContext.Provider value={{handleToggleTodo,handleRemoveTodo, handleAddTodo} }>
+          <List items={todos}
+           Component={TodoItem}/>
+            </TodoListContext.Provider>
         </div>
     </div>
   );
