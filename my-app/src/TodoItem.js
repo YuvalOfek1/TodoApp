@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import {TodoListContext} from './TodoList'
 const TodoItem = ({text, completed, index}) => {
-    const{handleRemoveTodo, handleToggleTodo} = useContext(TodoListContext)
+    const {handleRemoveTodo, handleToggleTodo} = useContext(TodoListContext)
 
     return  <div className={completed? 'item checked':'item'} key={index}>
     <input
